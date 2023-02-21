@@ -9,23 +9,15 @@ import {
   Box,
   Grid,
 } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import '../../css/login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
-    <Box
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100%',
-        position: 'fixed',
-        width: '100%',
-        backgroundColor: 'aquamarine',
-        margin: '-8px',
-      }}
-    >
-      <Card style={{ marginRight: '5%', marginLeft: '5%' }}>
-        <CardHeader title="E-commerce" style={{ textAlign: 'center' }} />
+    <Box className="loginBox">
+      <Card className="loginCard">
+        <CardHeader title="E-commerce" className="alignCenter" />
         <CardContent>
           <Grid container spacing={0}>
             <Grid xs={12}>
@@ -46,22 +38,11 @@ const Login = () => {
             </Grid>
           </Grid>
         </CardContent>
-        <CardActions style={{ textAlign: 'center', display: 'block' }}>
-          <div>
-            <Button variant="contained">Login</Button>
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              marginTop: '20px',
-              marginLeft: '0px',
-              marginBottom: '5px',
-            }}
-          >
-            <Button size="small">Forget Password?</Button>
-            <Button size="small">Create Account</Button>
-          </div>
+        <CardActions style={{ justifyContent: 'center' }}>
+          <Button variant="contained">Sign in</Button>
+          <Button variant="contained" onClick={() => navigate('/Create-User')}>
+            sign up
+          </Button>
         </CardActions>
       </Card>
     </Box>

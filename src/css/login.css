@@ -1,0 +1,24 @@
+.loginBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: aquamarine;
+  margin: -8px;
+}
+.loginCard {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.alignCenter {
+  text-align: center;
+}
+.loginButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
