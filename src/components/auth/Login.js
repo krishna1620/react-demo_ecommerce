@@ -25,7 +25,7 @@ const Login = () => {
       }}
     >
       <Card style={{ marginRight: '5%', marginLeft: '5%' }}>
-        <CardHeader title="E-commerce" />
+        <CardHeader title="E-commerce" style={{ textAlign: 'center' }} />
         <CardContent>
           <Grid container spacing={0}>
             <Grid xs={12}>
@@ -46,8 +46,22 @@ const Login = () => {
             </Grid>
           </Grid>
         </CardContent>
-        <CardActions style={{ justifyContent: 'center' }}>
-          <Button>Login</Button>
+        <CardActions style={{ textAlign: 'center', display: 'block' }}>
+          <div>
+            <Button variant="contained">Login</Button>
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginTop: '20px',
+              marginLeft: '0px',
+              marginBottom: '5px',
+            }}
+          >
+            <Button size="small">Forget Password?</Button>
+            <Button size="small">Create Account</Button>
+          </div>
         </CardActions>
       </Card>
     </Box>
