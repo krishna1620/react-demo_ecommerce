@@ -23,7 +23,7 @@ const Login = () => {
             <Grid xs={12}>
               <TextField
                 id="outlined-basic"
-                label="Username"
+                label="Email Id"
                 variant="outlined"
                 fullWidth
               />

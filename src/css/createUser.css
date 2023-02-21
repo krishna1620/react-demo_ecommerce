@@ -1,0 +1,24 @@
+.createUserBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: aquamarine;
+  margin: -8px;
+}
+.createUserCard {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+}
+.alignCenter {
+  text-align: center;
+}
+.createUserButton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
